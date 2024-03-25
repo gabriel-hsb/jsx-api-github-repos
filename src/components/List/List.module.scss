@@ -60,3 +60,10 @@ h3 {
     }
   }
 }
+
+@media (width <= 768px) {
+  .lista {
+    grid-template-columns: 1fr;
+    padding: 0.5em;
+  }
+}
