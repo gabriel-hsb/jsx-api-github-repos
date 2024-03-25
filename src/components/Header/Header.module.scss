@@ -1,0 +1,38 @@
+@import "../../global.scss";
+
+.header {
+  text-align: center;
+  margin-block: 1.8em;
+  h1 {
+    font-size: 2rem;
+    margin-block: 0.2em;
+    span {
+      color: $primary;
+    }
+  }
+
+  .divStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 0 2rem;
+
+    .avatar {
+      border: 2px solid $secondary;
+      transition: 0.5s;
+      margin-block: 1rem;
+      border-radius: 60%;
+      width: 150px;
+      height: 150px;
+      &:hover {
+        cursor: pointer;
+        border: 2px solid $primary;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}

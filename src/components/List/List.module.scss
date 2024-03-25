@@ -1,0 +1,62 @@
+@import "../../global.scss";
+
+h3 {
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  li {
+    gap: 1em;
+    background-color: $bg-darker;
+    border: 1px solid $secondary;
+    transition: 0.5s;
+    padding: 1em 0.8em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid $primary;
+    }
+
+    b {
+      color: $primary;
+      margin-right: 0.2em;
+    }
+
+    a {
+      text-align: center;
+      background-color: $primary;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      color: $font;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+      &:hover,
+      &:focus {
+        background-color: darken($primary, $amount: 10);
+      }
+
+      &:hover svg,
+      &:focus svg {
+        transform: translateX(5px);
+      }
+
+      svg {
+        width: 1em;
+        height: 1em;
+        fill: $bg;
+        transition: 0.2s;
+      }
+    }
+  }
+}
